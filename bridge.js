@@ -29,7 +29,9 @@ async function main() {
   const token = new ethers.Contract(HLS_ADDRESS, erc20Abi, wallet);
 
   const decimals = await token.decimals();
-  const randomAmount = (Math.random() * 2 + 1).toFixed(2);
+  const min = parseFloat(process.env.BRIDGE_MIN || "1");
+  const max = parseFloat(process.env.BRIDGE_MAX || "3");
+  const randomAmount = (Math.random() * (max - min) + min).toFixed(2);
   const amount = ethers.parseUnits(randomAmount, decimals);
   console.log(`🔁 Bridging ${randomAmount} HLS...`);
 
