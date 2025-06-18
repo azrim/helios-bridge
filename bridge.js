@@ -73,7 +73,7 @@ const main = async () => {
     const tx = await token.bridgeToChain(settings.toChain, recipient, amount);
     console.log(`⏳ TX sent: https://explorer.helioschainlabs.org/tx/${tx.hash}`);
     const receipt = await tx.wait();
-    console.log(`✅ Bridged! Block: ${receipt.blockNumber}`);
+    console.log(`✅ Bridged! Block: https://explorer.helioschainlabs.org/blocks/${receipt.blockNumber}`);
 
     const iface = new ethers.Interface(abi);
     for (const log of receipt.logs) {
