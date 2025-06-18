@@ -71,7 +71,7 @@ const main = async () => {
 
     console.log(`🔁 Bridging ${ethers.formatUnits(amount, settings.decimals)} tokens to ${settings.toChain}...`);
     const tx = await token.bridgeToChain(settings.toChain, recipient, amount);
-    console.log(`⏳ TX sent: ${tx.hash}`);
+    console.log(`⏳ TX sent: https://explorer.helioschainlabs.org/tx/${tx.hash}`);
     const receipt = await tx.wait();
     console.log(`✅ Bridged! Block: ${receipt.blockNumber}`);
 
