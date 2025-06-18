@@ -14,6 +14,27 @@ const config = {
     decimals: 18,
     type: "direct"
   },
+  "helios-to-bsc": {
+    rpc: process.env.HELIOS_RPC,
+    token: process.env.HLS_CA_HELIOS,
+    toChain: "BSC",
+    decimals: 18,
+    type: "direct"
+  },
+  "helios-to-fuji": {
+    rpc: process.env.HELIOS_RPC,
+    token: process.env.HLS_CA_HELIOS,
+    toChain: "Fuji",
+    decimals: 18,
+    type: "direct"
+  },
+  "helios-to-amoy": {
+    rpc: process.env.HELIOS_RPC,
+    token: process.env.HLS_CA_HELIOS,
+    toChain: "Amoy",
+    decimals: 18,
+    type: "direct"
+  },
   "sepolia-to-helios": {
     rpc: process.env.SEPOLIA_RPC,
     token: process.env.HLS_CA_SEPOLIA,
