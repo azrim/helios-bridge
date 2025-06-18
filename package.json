@@ -1,17 +1,18 @@
 {
   "name": "helios-native-bridge",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A native bridge using ethers.js and dotenv",
+  "main": "bridge.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sth": "node bridge.js sepolia-to-helios",
+    "hts": "node bridge.js helios-to-sepolia"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["helios", "bridge", "ethers", "web3"],
+  "author": "Mirza Moulfi Ghozali",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.5.0",
     "ethers": "^6.14.4"
-  },
-  "type": "module"
+  }
 }

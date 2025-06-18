@@ -11,6 +11,10 @@ A native bridge tool to replicate the Helios Portal (https://portal.helioschain.
 
 ## Setup
 
-```bash
-npm install
-cp .env.example .env
+`npm install`
+`cp .env.example .env`
+
+## Usage
+
+`npm run hts` helios to sepolia
+`npm run sth` sepolia to helios
