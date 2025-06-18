@@ -6,7 +6,10 @@
   "type": "module",
   "scripts": {
     "sth": "node bridge.js sepolia-to-helios",
-    "hts": "node bridge.js helios-to-sepolia"
+    "hts": "node bridge.js helios-to-sepolia",
+    "htb": "node bridge.js helios-to-bsc",
+    "htf": "node bridge.js helios-to-fuji",
+    "hta": "node bridge.js helios-to-amoy"
   },
   "keywords": ["helios", "bridge", "ethers", "web3"],
   "author": "Mirza Moulfi Ghozali",

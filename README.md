@@ -17,4 +17,7 @@ A native bridge tool to replicate the Helios Portal (https://portal.helioschain.
 ## Usage
 
 `npm run hts` helios to sepolia
+`npm run htb` helios to bsc
+`npm run htf` helios to fuji
+`npm run hta` helios to amoy
 `npm run sth` sepolia to helios
